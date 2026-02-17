@@ -12,3 +12,10 @@ h1, h3 {
 p {
     margin-bottom: 15px;
 }
+
+/* Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
