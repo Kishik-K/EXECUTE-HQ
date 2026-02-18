@@ -37,3 +37,26 @@ Target Value (numeric input)
 Add Button (event trigger)
 
 This provides a controlled and structured method for habit entry.
+
+
+📋 Habit List Table
+
+Tabular display of active habits.
+
+Columns:
+
+Habit Name
+
+Progress
+
+Dynamic row injection through JavaScript.
+
+Designed for scalable habit expansion.
+
+📊 Daily Standing Display
+
+Visual indicator of current discipline status.
+
+Displays completion ratio format: Completed / Total.
+
+Dynamically updated through script logic.
