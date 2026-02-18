@@ -1,44 +1,49 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="UTF-8">
-    <title>Execution HQ</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <title>Execution HQ</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+        
+    <body>
     
-<body>
+        <h1>Execution HQ</h1>
+        <p>Discipline • Focus • Precision</p>
+    
+    
+        <!-- Daily Standing -->
+        <h3>Daily Standing</h3>
+        <p id="disciplineRank">UNRANKED [0/0]</p>
 
-    <h1>Execution HQ</h1>
-    <p>Discipline • Focus • Precision</p>
-
-
-    <!-- Daily Standing -->
-    <h3>Daily Standing</h3>
-    <p id="disciplineRank">UNRANKED [0/0]</p>
-   
-    <!-- Add Habit -->
-    <h3>Add Habit</h3>
-    <input type="text" id="hName" placeholder="Habit Name">
-    <input type="date" id="hDate">
-    <input type="number" id="hTarget" placeholder="Target">
-    <button id="addBtn">Add</button>
-
-    <!-- Habit Table -->
-    <h3>Habit List</h3>
-    <table border="1">
-        <thead>
-            <tr>
-                <th>Habit</th>
-                <th>Progress</th>
-            </tr>
-        </thead>
-        <tbody id="habitBody"></tbody>
-    </table>
-
-   <script src="script.js"></script>
-
-</body>
+        <!-- Main Goal -->
+        <h3>Primary Objective</h3>
+        <input type="text" id="mainGoal" placeholder="Enter main goal">
+        
+        <!-- Add Habit -->
+        <h3>Add Habit</h3>
+        <input type="text" id="hName" placeholder="Habit Name">
+        <input type="date" id="hDate">
+        <input type="number" id="hTarget" placeholder="Target">
+        <button id="addBtn">Add</button>
+    
+        <!-- Habit Table -->
+        <h3>Habit List</h3>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Habit</th>
+                    <th>Progress</th>
+                </tr>
+            </thead>
+            <tbody id="habitBody"></tbody>
+        </table>
+    
+       <script src="script.js"></script>
+    
+    </body>
 </html>
+
 
 
 
