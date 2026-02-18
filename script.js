@@ -23,3 +23,10 @@ function addHabit() {
     save();
     document.getElementById("hName").value = "";
 }
+
+
+// ----- DELETE HABIT -----
+function deleteHabit(id) {
+    habits = habits.filter(h => h.id !== id);
+    save();
+}
