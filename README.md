@@ -60,3 +60,6 @@ Visual indicator of current discipline status.
 Displays completion ratio format: Completed / Total.
 
 Dynamically updated through script logic.
+
+(UPDATED: index.html, style.css, script.js,)
+(NEXT: Addingf a timer display window set for 25 minutes for "DEEP WORK SESSION")
