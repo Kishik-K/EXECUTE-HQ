@@ -4,6 +4,20 @@ let timerInterval = null;
 let timeLeft = 25 * 60;
 
 
+// ----- ON LOAD -----
+window.onload = function () {
+    render();
+    updateTimerDisplay();
+
+    document.getElementById("mainGoal").value =
+        localStorage.getItem("mainGoal") || "";
+
+    document.getElementById("mainGoal")
+        .addEventListener("input", function (e) {
+            localStorage.setItem("mainGoal", e.target.value);
+        });
+}
+
 // ----- ADD HABIT -----
 function addHabit() {
     const name = document.getElementById("hName").value;
