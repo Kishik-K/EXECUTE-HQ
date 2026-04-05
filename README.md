@@ -1,65 +1,125 @@
-# Execution HQ
+# EXECUTE HQ
+### *Discipline • Focus • Precision*
 
-A minimal productivity dashboard focused on discipline, daily goals, and habit tracking.
+> A dark luxury productivity OS for people who execute. No fluff. No color. Just discipline.
 
-##Project Initialization
+**[→ Live Demo](https://kishik-k.github.io/EXECUTE-HQ/)**
 
-Repository initialized with clean version control structure
+---
 
-Base HTML scaffold created
+## Screenshots
 
-Core layout architecture defined
+| Dashboard & 30-Day Momentum | Today's Missions |
+|---|---|
+| <img width="400" alt="Dashboard" src="https://github.com/user-attachments/assets/ffcc83ea-3750-4bd9-a092-618f0a17d714" /> | <img width="400" alt="Missions" src="https://github.com/user-attachments/assets/47686577-c6ab-49ad-b87f-69f677b9f63b" /> |
 
-Foundational structure prepared for scalable styling and behavior layers
+| Post-Mission Analysis | Historical Records |
+|---|---|
+| <img width="400" alt="Analysis" src="https://github.com/user-attachments/assets/f7aab50c-f2e7-4d04-b72f-7d6576651148" /> | <img width="400" alt="Archive" src="https://github.com/user-attachments/assets/f34d9156-0dff-474a-aad2-9f436166b58a" /> |
 
-This phase establishes the structural groundwork for Execution HQ, enabling disciplined iteration and modular expansion moving forward.
+---
 
+## What It Is
 
-Key Features
-🎯 Primary Objective Tracking
+EXECUTE HQ is a personal productivity system built around stoic philosophy and military-grade discipline. It tracks habits, measures daily output, and forces reflection — all wrapped in a dark luxury aesthetic that feels more like a war room than a to-do list.
 
-Dedicated input field to define the day’s main goal.
+No accounts. No subscriptions. No cloud. Just you, your missions, and localStorage.
 
-Acts as a single focus anchor for daily execution.
+---
 
-Designed for persistence and dynamic updates via JavaScript.
+## Features
 
-➕ Habit Creation System
+**Habit & Task Engine**
+- Add daily or repeating missions with targets, notes, and dates
+- Track progress with visual bar indicators and percentage completion
+- Drag and drop reordering with a glowing gold drop indicator
+- Filter by All, Routines, or Incomplete
+- Delete with confirmation — *Terminate mission?*
 
-Users can add structured habits using:
+**Rank System**
+- Daily standing updates in real time based on completion
+- Ranks: `UNRANKED` → `INITIATE` → `OPERATIVE` → `ELITE` → `SOVEREIGN`
+- Hit 100% and trigger particle burst + chord sound + sovereign pulse animation
 
-Habit Name (text input)
+**30-Day Momentum**
+- Weekly bar chart showing daily completion percentages for the last 7 days
+- Monthly heatmap showing intensity across every day of the current month
+- Color coded from dark to full white at 100%
 
-Execution Date (date selector)
+**Deep Work Timer**
+- Built-in 25-minute Pomodoro session timer
+- Start, pause, resume, reset controls
+- Custom Web Audio API tones on habit completion and full-day completion
 
-Target Value (numeric input)
+**Primary Objective**
+- Single bold input for the day's main command
+- Persists across sessions via localStorage
 
-Add Button (event trigger)
+**Post-Mission Analysis**
+- Daily reflection prompt — *Where did discipline fail today?*
+- On submission: fades out and reveals a random stoic quote
+- Quote bank from Marcus Aurelius, Seneca, Epictetus, Aristotle
 
-This provides a controlled and structured method for habit entry.
+**Historical Records**
+- Full archive of all past missions grouped by date
+- Collapsible section — stays out of the way until needed
 
+---
 
-📋 Habit List Table
+## Tech Stack
 
-Tabular display of active habits.
+- **HTML5** — semantic, single-page structure
+- **CSS3** — custom properties, keyframe animations, scroll reveal, grain texture
+- **Vanilla JavaScript (ES6+)** — zero dependencies, zero frameworks
+- **Web Audio API** — procedurally generated completion sounds
+- **Canvas API** — particle burst on sovereign completion
+- **localStorage** — full persistence, works offline, no backend needed
+- **IntersectionObserver** — scroll-triggered reveal animations
 
-Columns:
+---
 
-Habit Name
+## Design Philosophy
 
-Progress
+Everything in EXECUTE HQ is intentional:
 
-Dynamic row injection through JavaScript.
+- **Playfair Display** for headings — serif weight commands authority
+- **Inter** for data — clean, readable, no emotion
+- **Gold `#c5a059`** used sparingly — only for what matters
+- **No color** elsewhere — discipline has no room for decoration
+- Animations that reward, not distract — particles only fire when you've earned it
 
-Designed for scalable habit expansion.
+---
 
-📊 Daily Standing Display
+## Getting Started
 
-Visual indicator of current discipline status.
+No installs. No build step. Clone and open.
 
-Displays completion ratio format: Completed / Total.
+```bash
+git clone https://github.com/Kishik-K/EXECUTE-HQ.git
+cd EXECUTE-HQ
+```
 
-Dynamically updated through script logic.
+Open `index.html` in your browser — or use the **[live demo](https://kishik-k.github.io/EXECUTE-HQ/)**.
 
-(UPDATED: index.html, style.css, script.js,)
-(NEXT: Addingf a timer display window set for 25 minutes for "DEEP WORK SESSION")
+Data is stored in your browser's localStorage. Private, persistent, yours.
+
+---
+
+## Roadmap
+
+- [ ] Backend sync — cross-device data
+- [ ] Weekly and monthly summary reports
+- [ ] Custom rank titles
+- [ ] Mobile PWA support
+
+---
+
+## Author
+
+**Kishik** — [@Kishik-K](https://github.com/Kishik-K)
+
+Built as a personal tool. Deployed because it deserved to be seen.
+
+---
+
+*"Discipline is the bridge between goals and accomplishment." — Jim Rohn*
