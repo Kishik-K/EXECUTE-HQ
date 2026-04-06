@@ -110,13 +110,13 @@ EXECUTE-HQ/
 ├── index.html
 ├── style.css
 └── js/
-    ├── data.js      — habits, defaultHabits, quotes, storage
-    ├── audio.js     — audio functions
-    ├── render.js    — render engine, filter system
-    ├── analytics.js — heatmap, week scorecard
-    ├── dragdrop.js  — all drag and drop logic
-    ├── timer.js     — timer functions
-    └── main.js      — window.onload, setupEventListeners, addHabit
+    ├── data.js
+    ├── audio.js
+    ├── render.js
+    ├── analytics.js
+    ├── dragdrop.js
+    ├── timer.js
+    └── main.js
 
 ---
 
