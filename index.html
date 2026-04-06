@@ -1,53 +1,114 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <title>Execution HQ</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-        
-    <body>
-    
-        <h1>Execution HQ</h1>
-        <p>Discipline • Focus • Precision</p>
-    
-    
-        <!-- Daily Standing -->
-        <h3>Daily Standing</h3>
-        <p id="disciplineRank">UNRANKED [0/0]</p>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXECUTION HQ | FINAL</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' fill='%23000'/><text x='50%25' y='55%25' dominant-baseline='middle' text-anchor='middle' fill='%23c5a059' font-family='Didot,Bodoni MT,Playfair Display,Georgia,serif' font-size='17' font-weight='700' letter-spacing='1'>EQ</text></svg>">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,400;1,700&family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="top-bar reveal">
+            <header>
+                <h1>Execution HQ</h1>
+                <p>Discipline • Focus • Precision</p>
+            </header>
+            <div class="status-box">
+                <span class="rank-label">Daily Standing</span>
+                <span id="disciplineRank">UNRANKED [0/0]</span>
+            </div>
+        </div>
 
-        <!-- Main Goal -->
-        <h3>Primary Objective</h3>
-        <input type="text" id="mainGoal" placeholder="Enter main goal">
-        
-        <!-- Add Habit -->
-        <h3>Add Habit</h3>
-        <input type="text" id="hName" placeholder="Habit Name">
-        <input type="date" id="hDate">
-        <input type="number" id="hTarget" placeholder="Target">
-        <button id="addBtn">Add</button>
-    
-        <!-- Habit Table -->
-        <h3>Habit List</h3>
-        <table border="1">
-            <thead>
-                <tr>
-                    <th>Habit</th>
-                    <th>Progress</th>
-                </tr>
-            </thead>
-            <tbody id="habitBody"></tbody>
-        </table>
-        <!-- Post Mission Analysis -->
-                    <h3>Post-Mission Analysis</h3>
-                    <textarea id="aarText" placeholder="Write reflection"></textarea>
-                    <button id="submitAar">Submit</button>
-       <script src="script.js"></script>
-    
-    </body>
+        <section class="momentum-section reveal">
+            <span class="label">~30-Day Momentum~</span>
+            <div id="weekScorecard" class="week-scorecard"></div>
+            <div id="heatmap" class="heatmap-grid"></div>
+        </section>
+
+        <section class="timer-section reveal">
+            <span class="label">Deep Work Session</span>
+            <div id="timerDisplay">25:00</div>
+            <div class="timer-controls">
+                <button id="timerBtn">Start Session</button>
+                <button id="resetBtn">Reset</button>
+            </div>
+        </section>
+
+        <section class="focus-area reveal">
+            <span class="label">The Primary Objective</span>
+            <input type="text" id="mainGoal" placeholder="Define the day's command...">
+        </section>
+
+        <section class="reveal">
+            <span class="label">Establish New Entry</span>
+            <div class="input-grid">
+                <input type="text" id="hName" placeholder="Habit / Task">
+                <input type="date" id="hDate">
+                <input type="number" id="hTarget" placeholder="Target">
+                <input type="text" id="hNotes" placeholder="Notes (Type shit)">
+                <div class="repeat-container">
+                    <input type="checkbox" id="hRepeat">
+                    <label for="hRepeat">Repeat</label>
+                </div>
+                <button class="execute-btn" id="addBtn">Execute</button>
+            </div>
+            <!-- FILTER SELECTOR -->
+            <div class="filter-bar">
+                <span class="filter-label">View : </span>
+                <div class="filter-pills">
+                    <button class="filter-pill active" data-filter="all">All</button>
+                    <button class="filter-pill" data-filter="routines">Routines</button>
+                    <button class="filter-pill" data-filter="incomplete">Incomplete</button>
+                </div>
+                <span class="filter-count" id="filterCount"></span>
+            </div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th width="45%">Habit Entry</th>
+                        <th width="15%">Progress</th>
+                        <th width="40%">Visual Track</th>
+                    </tr>
+                </thead>
+                <tbody id="habitBody"></tbody>
+            </table>
+        </section>
+
+        <section class="aar-section reveal">
+            
+            
+            
+            <center class="reveal">
+            <span class="postMission label ">Post-Mission Analysis</span>
+            </center>
+            <hr class="aarHr">
+            <div id="aarInputContainer">
+                <p class="aar-prompt">Where did discipline fail today? Reflect upon the friction.</p>
+                <textarea id="aarText" placeholder="Log the bottleneck..."></textarea>
+                <button class="aar-btn" id="submitAar">File Report</button>
+            </div>
+            <div id="aarFeedback" class="hidden">
+                <p class="fam-msg">TOMORROW, WE SHALL BE BETTER.</p>
+                <p id="stoicQuote" class="stoic-text"></p>
+            </div>
+        </section>
+
+        <center class="reveal">
+            <button class="archive-trigger" id="toggleArchive">+/- Historical Records</button>
+            <hr class="archiveHr">
+        </center>
+
+        <section id="archiveSection" class="hidden reveal">
+            <br>
+            <span class="label">Archive</span>
+            <table>
+                <tbody id="archiveBody"></tbody>
+            </table>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
 </html>
-
-
-
-
-
