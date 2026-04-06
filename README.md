@@ -105,6 +105,21 @@ Data is stored in your browser's localStorage. Private, persistent, yours.
 
 ---
 
+## FILE STRUCTURE
+EXECUTE-HQ/
+├── index.html
+├── style.css
+└── js/
+    ├── data.js        — habits, defaultHabits, quotes, storage
+    ├── audio.js       — audio functions
+    ├── render.js      — render engine, filter system
+    ├── analytics.js   — heatmap, week scorecard
+    ├── dragdrop.js    — all drag and drop logic
+    ├── timer.js       — timer functions
+    └── main.js        — window.onload, setupEventListeners, addHabit
+
+---
+
 ## Roadmap
 
 - [ ] Backend sync — cross-device data
